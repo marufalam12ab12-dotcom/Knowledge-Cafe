@@ -32,7 +32,7 @@ const Blog = ({blog,handelBookmarks,handelBookMarkAsRead}) => {
 
             <h3 className="text-[20px] font-medium text-[#11111199] mt-4">{blog.hashtags}</h3>
 
-            <button className="underline mt-[27px] mb-[32px]" onClick={()=>handelBookMarkAsRead(blog.reading_time)}>Mark as Read</button>
+            <button className="underline mt-[27px] mb-[32px]" onClick={()=>handelBookMarkAsRead(blog.reading_time,blog.id)}>Mark as Read</button>
             <hr className="mb-[32px]" />
         </div>
     );
